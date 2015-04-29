@@ -1,0 +1,575 @@
+body
+{
+	background-image: URL(images/ibrixbg.png);
+}
+
+/* table css */
+.IPM_header
+{	
+	border-right: 1px solid #bdd2e1;  
+	border-bottom:1px solid #808080;
+	background-image: URL(images/header_bg_gradient.png);
+	background-repeat: repeat-x;
+	background-color:#7ba6c6;
+	padding: 2px 5px 2px 5px;      
+	font-size:14px;
+	font-family: Verdana;
+	align:left;
+	height:14px;   
+	cursor:default;
+	color : #FFFFFF;
+	
+}
+
+.IPM_headerFill
+{	
+	border-bottom:1px solid #808080;
+	background-image: URL(images/header_bg_gradient.png);
+	background-repeat: repeat-x;
+	padding: 2px 5px 2px 5px;
+	font-size:14px;
+	font-family:verdana;
+	align:left;
+	height:14px;
+	background-color:#7ba6c6;
+}
+
+/* for mango */  
+.IPM_filter_header
+{	
+	border-right: 1px solid #bdd2e1;  
+	border-bottom:1px solid #709dc0;
+	/*background-color: #709dc0;*/    
+	padding: 2px 5px 2px 5px;
+	font-size:14px;
+	font-family: Verdana; 
+	height:14px;   
+	cursor:default;
+	background-color:#7ba6c6;
+}
+
+.IPM_input_filter_bg
+{
+	background-image: URL(images/input_mid.gif);	
+}
+
+.IPM_ctrlRow
+{
+	border: 1px solid dotted;
+	background-color: transparent;     
+}
+
+.IPM_tableRow
+{
+	height:10px;
+}
+
+.IPM_selectedTableRow
+{
+	background-color: #d1e8a8;
+	color: #000000;
+	border: 1px solid black;
+}
+
+.IPM_tableBody
+{
+	table-layout:fixed;
+	border-collapse:collapse;
+	width:100%; 
+	border:1px solid white;
+}
+
+.IPM_tableBodySpan
+{
+	width:100%; 
+	height:100%; 
+	overflow:auto; 
+	background-color: #bdd2e1;;
+}
+
+.IPM_tableHead
+{
+	border-collapse:collapse;
+	width:100%;
+	table-layout: fixed;
+}
+
+.IPM_tableColResizeContainer{
+	margin-right: 10px;
+	background-color: transparent;
+	top: 1px; 
+	position: absolute; 
+	cursor: col-resize;
+	z-index:1000; 
+}
+
+.IPM_tableColResizeImage{
+		border:0px; 
+		background-color: transparent;
+}
+
+.IPM_cell
+{
+	border-left:1px solid #DCDCDC;
+	border-top:1px solid #bdd2e1; 
+	/* border-bottom:1px solid #DCDCDC; */
+	padding: 2px 5px 2px 5px;
+	font-family:verdana;
+	font-size:14px;
+}
+
+.IPM_cell_selected
+{
+	border-left:1px solid #bdd2e1;
+	border-top:1px solid black;
+	border-bottom:1px solid black; 
+	padding: 2px 5px 2px 5px;
+	font-family:verdana;
+	font-size:14px;
+}
+
+.IPM_cell_ctrl
+{
+	border-left:1px solid #bdd2e1;
+	border-top:1px dotted black;
+	border-bottom:1px dotted black; 
+	padding: 2px 5px 2px 5px;
+	font-family:verdana;
+	font-size:14px;
+}
+
+/*
+.cellLast
+{
+	border-top:1px solid #DCDCDC;
+	border-bottom:1px solid #DCDCDC;
+	padding: 2px 5px 2px 5px;
+	font-family:verdana;
+	font-size:14px;
+}*/
+
+
+
+.IPM_scrollTable
+{
+	width: 100%;
+	height: 100%;
+	overflow: hidden
+}
+.IPM_scrollTableHead
+{
+	background: #FFFFFF;
+	width: 100%;
+	overflow: hidden;
+}
+.IPM_scrollTableHead table
+{
+	background: buttonface;
+	empty-cells: show;
+	table-layout: fixed;
+}
+.IPM_scrollTableHead table td
+{
+}
+.IPM_scrollTableHead td,
+.IPM_scrollTableBody td
+{
+	color: windowtext;
+	font: icon;
+	padding: 2px;
+}
+.IPM_scrollTableBody
+{
+	overflow: auto;
+	width: 100%;
+}
+
+
+
+.IPM_ConBox_Title {     
+	background-color: transparent; 
+	background-image: URL(images/titlebar_mid.gif);
+	background-repeat:repeat-x;
+}
+
+.IPM_ConBox_Title_Foc {
+	background-color: transparent;
+	background-image: URL(images/titlebar_mid.gif);
+	background-repeat:repeat-x;
+}
+
+.IPM_ConBoxBorder { 
+	/* border: 1px #26394A solid; */
+	border-right-width: 0px;
+	border-bottom-width: 0px;	
+	border-top-width: 0px; 
+}
+
+.IPM_ConBox {
+
+	border: 1px #404040 solid;
+	background-color: #FFFFFF;
+}
+
+.IPM_Scrollbar {
+	scrollbar-darkshadow-color: #BBB;
+	scrollbar-arrow-color: #999;
+	scrollbar-face-color: #FAFAFA;
+	scrollbar-shadow-color: #E9E9E9;
+	scrollbar-3dlight-color: #BBB;
+	scrollbar-base-color: #DDD;
+}
+
+.IPM_Title_End
+{
+	background-image : URL(images/titlebar_left.gif);
+}
+
+.IPM_Title_Start
+{
+	background-image : URL(images/titlebar_right.gif);
+}
+
+
+/* ---------------------- Label classes ------------------------ */
+
+
+
+.IPM_Cbox_Lbl {
+
+	/*color: #101010;*/
+	color: #FFFFFF;
+}
+
+
+
+.IPM_Cbox_Lbl_Dis {
+
+	color: #919EB1;
+
+}
+
+
+
+.IPM_Cbox_Lbl_Font {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 11px;
+	cursor: default;
+
+}
+
+
+
+
+.IPM_Btn {
+	background-image: URL(images/mid_bn_rest.gif);
+	background-repeat:repeat-x;
+	background-color: transparent;
+	border-top:0px;
+	border-bottom:0px;
+	border-left:0px;
+	border-right:0px;
+	padding-top:0px;
+	padding-bottom:0px;
+	padding-left:10px;
+	padding-right:10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color:#FFFFFF;
+	cursor: hand;
+
+}
+
+
+
+.IPM_Btn_Hvr {
+	background-image: URL(images/mid_bn_hot.gif);
+	background-repeat: repeat-x;
+	background-color: transparent;
+	border-top:0px;
+	border-bottom:0px;
+	border-left:0px;
+	border-right:0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color:#FFFFFF;
+	cursor: hand;
+	padding-top:0px;
+	padding-bottom:0px;
+	padding-left:10px;
+	padding-right:10px;
+
+}
+
+
+
+.IPM_Btn_Dis {
+	background-image: URL(images/mid_bn_dis.gif);
+	background-repeat: repeat-x;
+	background-color: transparent;
+	border-top:0px;
+	border-bottom:0px;
+	border-left:0px;
+	border-right:0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color:#FFFFFF;
+	font-size: 12px;
+	cursor: hand;
+	padding-top:0px;
+	padding-bottom:0px;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+
+
+.IPM_Btn_Def{
+
+	background-image: URL(images/mid_bn_rest.gif);
+	background-repeat:repeat-x;
+	background-color: transparent;
+	border-top:0px;
+	border-bottom:0px;
+	border-left:0px;
+	border-right:0px;
+	padding-top:0px;
+	padding-bottom:0px;
+	padding-left:10px;
+	padding-right:10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color:#FFFFFF;
+	cursor: hand;
+}
+
+
+.IPM_DDListInput{
+	border:1px solid #787878;
+	border-right:0px;
+	background-color:#FFFFFF;
+}
+
+.IPM_DDListIcon{
+	border:1px solid #787878;
+	background-color:#FFFFFF;
+}
+
+.IPM_DDListList{
+	border:1px solid #787878;
+	border-top:0px;
+	background-color:#FFFFFF;
+}
+
+.IPM_DDListInput_Foc{
+	border:1px solid #000000;
+	border-right:0px;
+	background-color:#FFFFFF;
+}
+
+.IPM_DDListIcon_Foc{
+	border:1px solid #000000;
+	background-color:#FFFFFF;
+}
+
+.IPM_DDListList_Foc{
+	border:1px solid #000000;
+	border-top:0px;
+	background-color:#FFFFFF;
+}
+
+.IPM_DDList_Dis{
+	background-color:#ECECEC;
+}
+
+.IPM_DDListEFld{
+	color: #101010;
+	//border: 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	cursor: default;
+	background-color: #FFFFFF;
+}
+
+.IPM_DDListEFld_Dis {
+	color: #989898;
+	border: 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	cursor: default;
+	background: #FFFFFF;
+	background-color: #ECECEC;
+}
+
+.IPM_DDListBtn {
+	cursor: hand;
+	background-color:#FFFFFF;
+	border:0px;
+	color: #787878;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+.IPM_DDListBtnDis {
+	color: #B9B9B9;
+	border:0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	cursor:default;
+}
+
+.IPM_DDListSelectionList {
+	color: #101010;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	cursor: default;
+	background-color: #FFFFFF;
+}
+
+.IPM_DDListSelectionList_Brd {
+	border: 1px #404040 solid;
+}
+
+.IPM_DDListSelectionList_Title {
+	color: #101010;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	cursor: default;
+	border: 1px #404040 solid;
+	background-color: #E9E9E9;
+	border-left-style: hidden;
+	text-indent: 6px;
+	border-top-style: hidden;
+	border-right-style: hidden;
+}
+
+.IPM_DDListSelectionList_Title_Foc {
+	color: #101010;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	cursor: default;
+	border: 1px #404040 solid;
+	background-color: #F7F7F7;
+	border-left-style: hidden;
+	text-indent: 6px;
+	border-top-style: hidden;
+	border-right-style: hidden;
+}
+
+.IPM_DDListSelectionList_Selected {
+	color: #101010;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	cursor: default;
+	background: #E4DBC8;
+}
+
+.IPM_DDListSelectionList_CtrlSelected{
+	color: #101010;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	cursor: default;
+	background: #F9F2E3;
+}
+
+.IPM_DDListSelectionList_Marked {
+	color: #101010;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	cursor: default;
+	background: #EEEEEE;
+}
+
+.IPM_DDListScrollbar {
+	scrollbar-darkshadow-color: #BBB;
+	scrollbar-arrow-color: #999;
+	scrollbar-face-color: #FAFAFA;
+	scrollbar-shadow-color: #E9E9E9;
+	scrollbar-3dlight-color: #BBB;
+	scrollbar-base-color: #DDD;
+}
+
+
+
+
+
+.IPM_Btn {
+	background-image: URL(images/mid_bn_rest.gif);
+	background-repeat:repeat-x;
+	background-color: transparent;
+	border-top:0px;
+	border-bottom:0px;
+	border-left:0px;
+	border-right:0px;
+	padding-top:0px;
+	padding-bottom:0px;
+	padding-left:10px;
+	padding-right:10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color:#FFFFFF;
+	cursor: hand;
+
+}
+
+
+
+.IPM_Btn_Hvr {
+	background-image: URL(images/mid_bn_hot.gif);
+	background-repeat: repeat-x;
+	background-color: transparent;
+	border-top:0px;
+	border-bottom:0px;
+	border-left:0px;
+	border-right:0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color:#FFFFFF;
+	cursor: hand;
+	padding-top:0px;
+	padding-bottom:0px;
+	padding-left:10px;
+	padding-right:10px;
+
+}
+
+
+
+.IPM_Btn_Dis {
+	background-image: URL(images/mid_bn_dis.gif);
+	background-repeat: repeat-x;
+	background-color: transparent;
+	border-top:0px;
+	border-bottom:0px;
+	border-left:0px;
+	border-right:0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color:#FFFFFF;
+	font-size: 12px;
+	cursor: hand;
+	padding-top:0px;
+	padding-bottom:0px;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+
+
+.IPM_Btn_Def{
+
+	background-image: URL(images/mid_bn_rest.gif);
+	background-repeat:repeat-x;
+	background-color: transparent;
+	border-top:0px;
+	border-bottom:0px;
+	border-left:0px;
+	border-right:0px;
+	padding-top:0px;
+	padding-bottom:0px;
+	padding-left:10px;
+	padding-right:10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color:#FFFFFF;
+	cursor: hand;
+}

@@ -1,0 +1,109 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+</head>
+<body>
+<div class="row">
+    <!-- Modal -->dir="rtl">
+    <div class="modal fade modal-fullscreen force-fullscreen" id="mdRegist" tabindex="-1" role="dialog" aria-labelledby="mdRegist" aria-hidden="true"
+            style=" left: 15px; top: 15px;margin:1px; padding:0;height: 70%;width: 80%">
+        <div class="modal-dialog ">
+            <div class="modal-content" style="height:100%">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="mdRegist_titel">Modal title</h4>
+                </div>
+                <div class="modal-body" >
+                    <!-- body-->
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <div class="row">
+                                    <div class="col-md-4" dir="ltr">
+                                        <label for="dim1">מימעד1</label>
+                                        <input type="text" id="dim1" class="form-control" onfocus="getAITP('1')">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4" dir="ltr">
+                                        <label for="dim2">מימעד2</label>
+                                        <input type="text" id="dim2" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4" dir="ltr">
+                                        <label for="dim3">מימעד3</label>
+                                        <input type="text" id="dim3" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4" dir="ltr">
+                                        <label for="dim4">מימעד4</label>
+                                        <input type="text" id="dim4" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4" dir="ltr">
+                                        <label for="dim5">מימעד5</label>
+                                        <input type="text" id="dim5" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4" dir="ltr">
+                                        <label for="dim6">מימעד6</label>
+                                        <input type="text" id="dim6" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4" dir="ltr">
+                                        <label for="dim7">מימעד7</label>
+                                        <input type="text" id="dim7" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4" dir="ltr">
+                                        <label for="dim8">מימעד8</label>
+                                        <input type="text" id="dim8" class="form-control">
+                                    </div>
+                                </div>
+
+                            </div><!--  <div class="col-sm-9"> -->
+                            <div class="col-sm-4">
+                                <div class="row">
+                                    <!-- Tabele serch -->
+                                    <div class="table-responsive" id="Serch_div" style="height: 350px; overflow: scroll" >
+                                        <table class="table table-hover" id="tblSerch" >
+                                            <thead>
+                                            <tr>
+                                                <th style="text-align: right">code</th>
+                                                <th style="text-align: right">name</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>     <!--  <div class="col-sm-2"> -->
+                        </div><!-- div class="row"> -->
+
+                    </div>
+
+                </div><!-- end body -->
+            </div>
+            <div class="modal-footer" style="height: 10%">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Modal -->
+
+
+</div>
+</body>
+</html>

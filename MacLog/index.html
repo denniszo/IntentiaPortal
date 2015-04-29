@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+
+   <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+    <!--<script src="//code.jquery.com/ui/1.11.0/jquery-ui.js"></script>-->
+  <!--  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css"/>-->
+    <script src="jquery-1.11.2.js"></script>
+    <script src="jquery-ui.js"></script>
+    <link rel="stylesheet" href="jquery-ui.css"/>
+
+   <!-- <script src="//cdn.datatables.net/1.10.0/js/jquery.dataTables.js"></script>-->
+   <!-- <script src="//cdn.datatables.net/tabletools/2.2.1/js/dataTables.tableTools.min.js"></script>-->
+   <!-- <link href="//cdn.datatables.net/tabletools/2.2.1/css/dataTables.tableTools.css" rel="stylesheet" type="text/css"/>-->
+   <!-- <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.0/css/jquery.dataTables.css"/>-->
+
+    <!-- Bootstrap -->
+    <link href="/intentia/sors/bootstrap.min.css" rel="stylesheet"/>
+    <script src="/intentia/sors/bootstrap.min.js"></script>
+
+    <script src="index.js"></script>
+
+    <title>מעקב שגיאות ממשקים</title>
+
+    <style type="text/css">
+        #mydiv {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            /* bring your own prefixes */
+            transform: translate(-50%, -50%);
+        }
+        #mydiv2 {
+            position: fixed;
+            left: 20%;
+            height: 500px ;
+            overflow: scroll;
+            /* bring your own prefixes */
+
+
+        }
+    </style>
+
+</head>
+<body on onload="onload()" dir="rtl">
+<div class="panel panel-info" >
+    <div class="panel-heading">פורטל למעקב שגיאות בממשקים</div>
+        <div class="panel-body">
+            <div class="input-group" style="width: 50%">
+                <span class="input-group-addon" id="basic-addon1"  style="width: 20px">שעות אחורה לתצוגה</span>
+                <div>
+                    <input type="number" min="1" max="24" id="hourse" class="form-control" placeholder="שעות" aria-describedby="basic-addon1" value="2" onkeypress='if (window.event.keyCode==13) {(reloadTabele());}'>
+                </div>
+            </div>
+            <div class="input-group" style="width: 50%">
+                <span class="input-group-addon" id="basic-addon2"  style="width: 20px" >הצג ממשקים</span>
+                <select class="form-control" id="selNames" onchange="reloadTabele()">
+                    <option value="0">הכול</option>
+                    <option value="CancelOrder">ביטול הזמנה</option>
+                    <option value="DeliveriesSubcontract">משלוח לקבלן משנה</option>
+                    <option value="ReturnDelivery">חזרה מלקוח</option>
+                    <option value="MHS850MovWarehouse">העברה בין מחסנים</option>
+                    <option value="PPS001PurchRecipt">קליטה מרכש</option>
+                    <option value="Deliveries">משלוח ללקוח </option>
+                    <option value="MMS175MovLocation">העברה בין איתורים</option>
+                    <option value="MHS850_ReclassificationTransaction">שינוי סטטוס</option>
+                    <option value="ManufacturerOrders">הוראת יצור</option>
+                    <option value="ManufacturingOrder_PMS050">דיווח יצור</option>
+                    <option value="PPS001Purch_Import">קליטה מיבוא</option>
+                </select>
+            </div>
+            <button type="button" class="btn btn-warning" onclick="reloadTabele()">הצג מחדש</button>
+        </div>
+</div>
+<div class="table-responsive" style="width: 80%" id="mydiv2">
+    <table class="table table-hover" id="tblLines" style="scrol" >
+        <thead>
+        <tr>
+            <th style="text-align: right">שעה</th>
+            <th style="text-align: right">שם ממשק</th>
+            <th style="text-align: right">הערות</th>
+            <th style="text-align: right">פתח שגיאה</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+
+</div>
+</body>
+</html>

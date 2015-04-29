@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+
+    <script src="index.js"></script>
+
+    <script src="/intentia/sors/jquery-1.11.2.js"></script>
+    <script src="/intentia/sors/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/intentia/sors/jquery-ui.css"/>
+
+    <!-- Bootstrap -->
+    <link href="/intentia/sors/bootstrap.min.css" rel="stylesheet"/>
+    <script src="/intentia/sors/bootstrap.min.js"></script>
+
+    <!-- CSV parsher
+        API:
+        https://code.google.com/p/jquery-csv/
+    -->
+    <script src="/intentia/sors/jquery.csv-0.71.min.js"></script>
+
+    <title>csv file uploader test</title>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            // The event listener for the file upload
+            document.getElementById('txtFileUpload').addEventListener('change', upload, false);
+
+            // Method that checks that the browser supports the HTML5 File API
+            function browserSupportFileUpload() {
+                var isCompatible = false;
+                if (window.File && window.FileReader && window.FileList && window.Blob) {
+                    isCompatible = true;
+                }
+                return isCompatible;
+
+            };
+        });
+
+    </script>
+
+</head>
+<body onload="onLoad()">
+<div class="container-fluid">
+    <div class="row">
+        <div id="dvImportSegments" class="fileupload ">
+            <fieldset>
+                <legend>Upload your CSV File</legend>
+                <input type="file" name="File Upload" id="txtFileUpload" accept=".csv" class="form-control"/>
+            </fieldset>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-1">
+            <label for="inpUser">שם משתש</label>
+            <input type="text" id="inpUser" class="form-control">
+        </div>
+        <div class="col-sm-1">
+            <label for="inpPass">סיסמא</label>
+            <input type="password" id="inpPass" class="form-control">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-5">
+            <div class="table-responsive" id="divData">
+                <table class="table table-hover" id="tblData" dir="rtl" style="overflow: scroll">
+                    <thead>
+                    <tr>
+                        <th style="text-align: right">שם</th>
+                        <th style="text-align: right">משפחה</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-sm-5">
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

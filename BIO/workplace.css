@@ -1,0 +1,598 @@
+/*------------------------- Quick Switch Area --------------------------*/
+.QuickSwitchHeader{
+	/*background-color: #28232D;*/
+	background-image: URL(images/qs_header_bg.gif?v=523);
+	background-repeat: repeat-x;
+	border-width: 1px 0px 0px 0px;
+	border-color: #26394A;
+	border-style: solid;
+	color: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	/*font-weight: bold;*/
+	letter-spacing: 1px;
+   	height: 18px;
+   	padding-top: 3;
+   	padding-bottom: 3;
+   	padding-left: 6;
+   	padding-right: 6;
+
+}
+
+#QuickSwitch_List {
+	margin: 4 6 4 6;
+	table-layout:fixed;
+	}
+
+#QuickSwitch_List tr {
+	font-family: Verdana;
+	color: #101010;
+	font-size: 11px;
+	background-color: #F2F5F8;
+	cursor:hand;
+	}
+
+#QuickSwitch_List tr.active {
+	background-color: #EABC44;
+	}
+
+#QuickSwitch_List td {
+	width: 90%;
+	padding: 2 6 2 6;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	}
+
+#QuickSwitch_List img {
+	float:right;
+	margin-right: 3px;
+	position: relative;
+	border: none;
+	top: 0px;
+	}
+
+.QuickSwitch_Hr
+	{
+	background-image: URL(images/hrline.gif?v=523);
+	background-repeat: repeat-x;
+	position: relative;
+	width: 95%;
+	height: 1px;
+	left: 6px;
+	top: 0px;
+	display: block;
+	}
+
+.QuickSwitch_Body{
+	background-color: #F2F5F8;
+	border-width: 0 1 1 1;
+	border-style: solid;
+	border-color: #26394A;
+
+}
+
+/*--------------------- Navigator Tree Area ---------------------------*/
+.TreeScrollBar{
+	scrollbar-face-color: #D2D2D2;
+	scrollbar-arrow-color: #101010;
+	scrollbar-base-color: #D2D2D2;
+	scrollbar-track-color: #E9E9E9;
+	scrollbar-highlight-color: #D2D2D2;
+	scrollbar-darkshadow-color: #BEBEBE;
+	scrollbar-3dlight-color: #BEBEBE;
+	scrollbar-shadow-color: #D2D2D2;
+}
+
+.TreeBackground{
+	background-color: #F2F5F8;
+}
+
+.TreeBorder{
+	border-width: 0px 1px 1px 1px;
+	border-color: #26394A;
+	border-style: solid;
+}
+.TreeTextSection{
+	background-color: #B8C3CD;
+	color: #223546;
+	cursor: hand;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+   	height: 18;
+   	/* the width must be defined, without %, pure pixels */
+   	width:220;
+   	overflow:hidden;
+   	text-overflow: ellipsis;
+   	padding: 3 6 3 6;
+   	margin-bottom: 2;
+  	margin-top: 4;
+}
+.TreeTextSectionSelected{
+	background-color: #E7EBEF;
+	color: #223546;
+	cursor: hand;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+   	height: 18;
+   	/* the width must be defined, without %, pure pixels */
+   	width:220;
+   	overflow:hidden;
+   	text-overflow: ellipsis;
+   	padding: 2 5 2 5;
+   	margin-bottom: 2;
+  	margin-top: 4;
+  	border: 1px #BDC3CE solid;
+}
+.TreeVerticalLineNotLast {
+
+   	/*background-image: URL(images/tree/line.gif?v=523);
+   	background-repeat: repeat-y;*/
+   	position: relative;
+   	left: 14;
+   	height: 16;
+   	cursor: default;
+   	white-space: nowrap;
+ }
+
+.TreeNoVerticalLineNotLast {
+   	position: relative;
+   	left: 14;
+   	height: 16;
+   	cursor: default;
+   	white-space: nowrap;
+}
+
+.TreeVerticalLineLast {
+
+   	/*background-image: URL(images/tree/line.gif?v=523);
+   	background-repeat: no-repeat;*/
+   	position: relative;
+   	left: 14;
+   	height: 16;
+   	cursor: default;
+   	white-space: nowrap;
+
+}
+
+.TreeNoVerticalLineLast {
+   	position: relative;
+   	left: 14;
+   	height: 16;
+   	cursor: default;
+   	white-space: nowrap;
+}
+
+.TreePlusSign {
+   	background-image: URL(images/tree/collapsed.gif?v=523);
+   	width: 15;
+   	height: 16;
+   	cursor: default;
+}
+
+.TreeMinusSign {
+   	background-image: URL(images/tree/expanded.gif?v=523);
+   	width: 15;
+   	height: 16;
+   	cursor: default;
+}
+
+.TreeHorizontalLine {
+   	background-image: URL(images/tree/nochildren.gif?v=523);
+   	width: 0;
+   	/*width: 15*/
+   	height: 16;
+   	cursor: default;
+}
+
+.TreeNoHorizontalLine {
+   	width: 15;
+   	height: 16;
+   	cursor: default;
+}
+
+.TreeFolderClosed {
+   	background-image: URL(images/tree/folder_collapsed.gif?v=523);
+   	width: 0;
+   	/*width: 16*/
+   	height: 16;
+   	cursor: default;
+}
+
+.TreeFolderOpen {
+   	background-image: URL(images/tree/folder_expanded.gif?v=523);
+   	width: 0;
+   	/*width: 16*/
+   	height: 16;
+   	cursor: default;
+}
+
+/*Mime types and class constants are added in cexternalstyletreenoderenderer.js*/
+.TreeDocument {
+   	background-image: URL(images/tree/leaf.gif?v=523);
+   	width: 16;
+   	height: 16;
+   	cursor: hand;
+}
+
+.TreeTextNonSelected {
+   	height: 14;
+   	margin-left: 2;
+   	padding-left: 1;
+   	padding-top: 1;
+   	padding-right: 2;
+   	border: 1px #F2F5F8 solid;
+   	color: #101010;
+   	font-family: Verdana, Sans-Serif;
+   	font-size: 11px;
+   	/*text-transform: lowercase;*/
+   	cursor: hand;
+
+}
+
+.TreeTextSelectedOn {
+   	height: 14;
+   	margin-left: 2;
+   	padding-left: 1;
+  	padding-top: 1;
+   	padding-right: 2;
+   	border: 1px #EABC44 solid;
+   	background-color: #FFFFFF;
+   	color: #101010;
+   	font-family: Verdana, Sans-Serif;
+   	font-size: 11px;
+   	/*text-transform: lowercase;*/
+   	cursor: hand;
+
+}
+
+.TreeTextSelected {
+   	height: 14;
+   	margin-left: 2;
+   	padding-left: 1;
+  	padding-top: 1;
+   	padding-right: 2;
+   	border: 1px #D2D2D2 solid;
+   	background-color: #D2D2D2;
+   	color: #101010;
+   	font-family: Verdana, Sans-Serif;
+   	font-size: 11px;
+   	/*text-transform: lowercase;*/
+   	cursor: hand;
+
+}
+
+/*------------------ Gate Area ---------------------*/
+
+.Gate{
+	background-color: #FFFFFF;
+}
+
+.GateClose{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	color: #D4D4D4;
+	cursor:hand;
+}
+
+/*------------------- Logon Area -----------------------*/
+
+.LogonBackground{
+	padding-top: 80px;
+	padding-left: 56px;
+	height: 223px;
+	background-image: URL(images/logonpic.gif?v=523);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+
+.LogonHeadFont{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	color: #101010;
+}
+
+/*------------------- SystemSelector Area -----------------------*/
+
+.SysSelBG{
+	background-color:#F5F5F5;
+}
+
+.SysSel{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #101010;
+	background-color: transparent;
+	border: 0px #F5F5F5 solid;
+}
+
+/*------------------- FrameSet Area -----------------------*/
+
+/* Change the width here to change the width of the FrameSet */
+#FrameSetWidth{
+	width:250px;
+	visibility:hidden;
+}
+
+/* Change the width here to change the width of the margins in the FrameSet */
+#FrameSetMargin{
+	width:6px;
+	visibility:hidden;
+}
+
+/* Change the height here to change the height of the tree in the FrameSet */
+/* To use max height of tree set height to null */
+#workTreeBottom{
+	height: 65%;
+	visibility:hidden;
+}
+
+/* Use this to set size to the MWP Logotype */
+#PortalLogo{
+	border: 1px solid #26394A;
+	border-bottom: 0px solid #26394A;
+	background-image: URL(images/MovexWorkplaceLogotype.gif?v=523);
+	height:75px;
+	width:238px;
+}
+
+/* The background of the whole Frameset Area */
+.FrameSetBG{
+	background-color: #FFFFFF;
+}
+
+/* Use this to set position of the FrameSet background image */
+#FrameSetImg{
+	top:40px;
+	left:300px;
+}
+
+/* The style of the Navigatioin Area */
+.NavigatorArea{
+	background-color:#C0C9D3;
+	background-image: URL(images/MWP_Navarea_Background.jpg?v=523);
+	background-repeat: no-repeat;
+}
+
+/*Style classes for the Focus lines*/
+.FocusLineColor{
+	color:transparent;
+}
+
+.FocusLineColorOn{
+	color:transparent;
+}
+
+/*Progress indication area*/
+.ProgressBg{
+	position: relative;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	border: 1px solid #26394A;
+	background-color: #E3E8ED;
+	background-image: URL(images/progressindicator.gif?v=523);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	cursor: wait;
+}
+
+
+
+/*Style classes for the User Information div */
+.UserDetails{
+	background-color:transparent;
+	border:0px #B4B4B4 solid;
+	margin-top:0px;
+	margin-bottom:0px;
+	padding-left:2px;
+	padding-right:2px;
+}
+
+.UserDetailsFont{
+	font-family:Verdana;
+	font-size:9px;
+	color:#101010;
+}
+
+
+/*Style classes for the Portal menu*/
+.WPmenubar{
+	background-color: #E3E8ED;
+	border: 1px #26394A solid;
+
+}
+
+.WPmenulabelOn{
+	background-color: #C8D2DC;
+	border: 1px #C8D2DC solid;
+	font-family: Verdana;
+	font-size: 11px;
+	padding-left: 3px;
+	padding-right: 3px;
+	color: #101010;
+	text-align:"right";
+	cursor:hand;
+}
+
+.WPmenulabel{
+	background-color: #E3E8ED;
+	border: 1px #E3E8ED solid;
+	font-family: Verdana;
+	font-size: 11px;
+	padding-left: 3px;
+	padding-right: 3px;
+	color: #101010;
+	text-align:"right";
+	cursor:hand;
+}
+
+
+/*Style classes for navigator Header*/
+
+.NavigatorHeader{
+	/*background-color: #28232D;*/
+	background-image: URL(images/navigator_header_bg.gif?v=523);
+	background-repeat: repeat-x;
+	border-width: 1px 1px 0px 1px;
+	border-color: #26394A;
+	border-style: solid;
+	color: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	/*font-weight: bold;*/
+	letter-spacing: 1px;
+   	height: 18px;
+   	padding-top: 3;
+   	padding-bottom: 3;
+   	padding-left: 6;
+   	padding-right: 6;
+
+}
+
+/*Style classes for the menu Tree Header*/
+.NavTreeTabArea{
+	background-color: transparent;
+	border: 1px #FAFAFA solid;
+	border-top-style: 0px #F7F7F7 solid;
+	border-right-style: 0px #F7F7F7 solid;
+	border-left-style: 0px #F7F7F7 solid;
+}
+
+.NavTreeTab{
+	background-color: #FAFAFA;
+	border: 1px #848484 solid;
+	border-bottom-style: 1px #FAFAFA solid;
+	font-family: Verdana;
+	font-size: 12px;
+	padding-left: 3px;
+	padding-right: 3px;
+	color: #101010;
+	cursor: hand;
+}
+
+.NavTreeTabInactive{
+	background-color:#F7F7F7;
+	font-family: Verdana;
+	font-size: 12px;
+	padding-left: 3px;
+	padding-right: 3px;
+	color: #101010;
+	cursor: hand;
+	border: 1px #848484 solid;
+	border-top-style: 0px #F7F7F7 solid;
+	border-right-style: 0px #F7F7F7 solid;
+	border-left-style: 0px #F7F7F7 solid;
+}
+
+.NavTreeTopBorder{
+	border: 1px #848484 solid;
+	border-top-style: 0px #F7F7F7 solid;
+	border-right-style: 0px #F7F7F7 solid;
+	border-left-style: 0px #F7F7F7 solid;
+}
+
+/*------------------- StartBox -----------------------*/
+.StartBox{
+	background-color: #E9E9E9;
+	border: 1px #404040 solid;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #101010;
+}
+
+/*------------------- Menu Area -----------------------*/
+.WorkplaceMenu{
+	font-family: Verdana;
+	font-size: 11px;
+	color: #223546;
+	background-color: #E3E8ED;
+	border: 1px #E3E8ED solid;
+}
+
+.WorkplaceMenuShadow{
+/*	background-color: #A9A9A9;
+	border: 1px silver solid;
+	*/
+}
+
+.WorkplaceMenuBorder {
+	border: 1px solid #677788;
+	border-top-style: hidden;
+}
+
+.WorkplaceMenuLeft{
+	background-color: #E3E8ED;
+	border: 1px #E3E8ED solid;
+	border-left-style: hidden;
+	border-top-style: hidden;
+	border-bottom-style: hidden;
+}
+
+.WorkplaceMenuMiddle{
+	font-family: Verdana;
+	font-size: 11px;
+	color: #223546;
+	background-color: #E3E8ED;
+	border: 1px #E3E8ED solid;
+	border-right-style: hidden;
+	border-left-style: hidden;
+	cursor:hand;
+}
+
+.WorkplaceMenuRight{
+	background-color: #E3E8ED;
+	border: 1px #E3E8ED solid;
+	border-right-style: hidden;
+	border-top-style: hidden;
+	border-bottom-style: hidden;
+}
+
+.WorkplaceMenuLeftOn{
+	background-color: #E3E8ED;
+	border: 1px #EABC44 solid;
+	border-left-style: hidden;
+	border-top-style: hidden;
+	border-bottom-style: hidden;
+}
+
+.WorkplaceMenuMiddleOn{
+	font-family: Verdana;
+	font-size: 11px;
+	color: #223546;
+	background-color: #FFFFFF;
+	border: 1px #EABC44 solid;
+	border-right-style: hidden;
+	border-left-style: hidden;
+	cursor:hand;
+}
+
+.WorkplaceMenuRightOn{
+	background-color: #E3E8ED;
+	border: 1px #EABC44 solid;
+	border-right-style: hidden;
+	border-top-style: hidden;
+	border-bottom-style: hidden;
+}
+
+.WorkplaceMenuLine{
+	color:#677788;
+	height:1px;
+	margin-bottom:0px;
+	margin-top:0px;
+	padding-bottom:0px;
+	padding-top:0px;
+}
+
+/*----------------------- Default classes -----------------------*/
+.WorkPlaceDisablerColor{
+	background-color: #E9E9E9;
+	cursor:progress, wait;
+
+}
